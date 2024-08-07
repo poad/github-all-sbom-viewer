@@ -1,0 +1,47 @@
+{
+  "name": "github-sbom-viewer",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "cdk": "bin/cdk.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "poku",
+    "cdk": "cdk",
+    "lint": "eslint './{bin,lib,lambda}/**/*.ts'",
+    "lint-fix": "eslint --fix './{bin,lib,lambda}/**/*.ts'"
+  },
+  "devDependencies": {
+    "@aws-lambda-powertools/logger": "^2.6.0",
+    "@octokit/types": "^13.5.0",
+    "@stylistic/eslint-plugin": "^2.6.1",
+    "@stylistic/eslint-plugin-js": "^2.6.1",
+    "@stylistic/eslint-plugin-plus": "^2.6.1",
+    "@stylistic/eslint-plugin-ts": "^2.6.1",
+    "@types/aws-lambda": "^8.10.143",
+    "@types/node": "^22.1.0",
+    "aws-cdk": "^2.151.0",
+    "esbuild": "^0.23.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-import": "^2.29.1",
+    "poku": "^2.4.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.0.1"
+  },
+  "dependencies": {
+    "@hono/oauth-providers": "^0.6.0",
+    "@octokit/core": "^6.1.2",
+    "@octokit/plugin-paginate-graphql": "^5.2.2",
+    "@octokit/plugin-paginate-rest": "^11.3.3",
+    "aws-cdk-lib": "^2.151.0",
+    "constructs": "^10.3.0",
+    "hono": "^4.5.4",
+    "source-map-support": "^0.5.21"
+  },
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
+}
